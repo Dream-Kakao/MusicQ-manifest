@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: test
-        image: thsqudwn05/sbimage
+        image: testaction/leehb97:latest
         
 ---
 
