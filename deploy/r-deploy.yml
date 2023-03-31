@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fe-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fe
+  template:
+    metadata:
+      labels:
+        app: fe
+    spec:
+      containers:
+      - name: test
+        image: leehb97/testraction:latest
+        
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: fe-svc
+spec:
+  selector:
+    app: fe
+  ports:
+  - name: http
+    port: 3050
+    protocol: TCP
+    targetPort: 80
+  type: LoadBalancer
