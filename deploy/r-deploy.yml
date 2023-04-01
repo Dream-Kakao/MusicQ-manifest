@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: test
-        image: leehb97/testraction:909ca5abcfe55765d6d7e2dccacade344011ad16
+        image: leehb97/testraction:4a2df05694984b73f91533a6beb58fec08802605
         
 ---
 
