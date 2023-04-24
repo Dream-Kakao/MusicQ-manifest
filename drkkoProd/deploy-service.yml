@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: drkko-service-svc
+spec:
+  selector:
+    app: drkko-service
+  ports:
+    - name: http
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: drkko-service-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: drkko-service
+  template:
+    metadata:
+      labels:
+        app: drkko-service
+    spec:
+      containers:
+        - name: drkko-service
+          image: 여기에 이미지 넣어줭~
