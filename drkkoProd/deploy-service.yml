@@ -28,4 +28,4 @@ spec:
     spec:
       containers:
         - name: drkko-service
-          image: 여기에 이미지 넣어줭~
+          image: dreamkakao/musicq-service:latest
