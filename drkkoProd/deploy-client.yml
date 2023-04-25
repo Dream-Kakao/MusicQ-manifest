@@ -28,4 +28,4 @@ spec:
     spec:
       containers:
         - name: drkko-client
-          image: 이미지 집어넣자~
+          image: dreamkakao/musicq-client:latest
