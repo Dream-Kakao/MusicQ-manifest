@@ -28,4 +28,4 @@ spec:
     spec:
       containers:
         - name: drkko-client
-          image: dreamkakao/musicq-client:ff9d3496d0193d39be30f3cea13e371becd3d7db
+          image: dreamkakao/musicq-client:d94ffca08f1ee506753bc127b408e8d01e86d409
